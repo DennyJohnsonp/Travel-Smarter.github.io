@@ -2,11 +2,66 @@
 <html>
 
 <head>
-    <title>Account</title>
+    <title>Welcome</title>
 </head>
+<link rel="stylesheet" type="text/css" href="loginStyle.css">
+<script defer src="login-page.js"></script>
+<link rel="stylesheet" href="index.css">
+<script src="transport.js"></script>
 
 <body>
-    <h1>Account to be done and too merge,Will be done soon </h1>
+    <div>
+        <ul>
+            <h4 id="firstlink">
+                <a style="text-decoration: none;"><img id="i1" src="Images/friends.png"></a>
+            </h4>
+            <h4>
+                <a href="Gift.html" style="text-decoration: none;"><img id="i1" src="Images/gift-card.png"></a>
+            </h4>
+            <h4>
+                <a onclick="display()" return false href="#" style="text-decoration: none;"><img id="i1" src="Images/ticket.png"></a>
+            </h4>
+            <h4>
+                <a href="hotels.html" style="text-decoration: none;"><img id="i1" src="Images/online-booking.png"></a>
+                </a>
+            </h4>
+            <h4>
+                <a href="packages.html" style="text-decoration: none;"><img id="i1" src="Images/backpack.png"></a>
+            </h4>
+
+            <h4 id="lastlink">
+                <a href="index.html" style="text-decoration: none;"><img id="i1" src="Images/home.png"></a>
+            </h4>
+            <img src="Images/logo.png" name="Logo" width="300" height="150">
+        </ul>
+    </div>
+    <section id="login-box" style="display: none;">
+        <button id="closebtn">X</button>
+        <div id="msg-holder">
+            <p id="error-msg" class="msg-default-style"></p>
+            <p id="success-msg" class="msg-default-style"></p>
+        </div>
+        <div>
+            <div class="left-box">
+                <h3 class="loginTitle"> Already Have Account?</h3>
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Sign-in" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input id="login-form-submit" type="submit" class="submitBtn" value="Sign-in">
+                </form>
+            </div>
+            <div class="right-box">
+                <h3 class="loginTitle"> Sign Up</h3>
+                <form id="signup-form">
+                    <input type="text" name="username" placeholder="Username" />
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Set Password" />
+                    <input id="signup-form-submit" type="submit" class="submitBtn" value="Sign Up" />
+                </form>
+            </div>
+            <div class="or">OR</div>
+        </div>
+    </section>
 </body>
 
 </html>
